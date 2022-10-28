@@ -1,0 +1,141 @@
+:root {
+    --primary-text-color: #1E212B;
+    --secondary-text-color: #757575;
+    --white-color: #ffffff;
+    --bg-color: #F3F4F5;
+    --button-bg-color: #FFB5A7;
+    --uptitle-color: #B7BCCB;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+
+    color: var(--primary-text-color);
+    background-color: var(--bg-color);
+}
+
+.button {
+    font-size: 18px;
+    line-height: 1.4444;
+    text-align: center;
+    letter-spacing: 0.18px;
+
+    color: var(--white-color);
+    background-color: var(--button-bg-color);
+}
+
+.uptitle {
+    line-height: 1.1667;
+    text-align: center;
+    letter-spacing: 1.26px;
+    text-transform: uppercase;
+
+    color: var(--uptitle-color);
+}
+
+.title {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-size: 47px;
+    line-height: 1.1702;
+    text-align: center;
+}
+
+.subtitle {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 1.4762;
+    text-align: center;
+    letter-spacing: 0.72px;
+}
+
+.descr {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5294;
+    text-align: center;
+
+    color: var(--secondary-text-color);
+}
+
+.list {
+    list-style: none;
+}
+
+.header {}
+
+.welcome {}
+
+.section {}
+
+.welcome-title {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 1.4821;
+    text-align: center;
+    letter-spacing: 1.92px;
+}
+
+.descr {}
+
+.gallery {}
+
+.included {}
+
+.included-title {}
+
+.included-list {}
+
+.portfolio {}
+
+.portfolio-title {}
+
+.portfolio-list {}
+
+.img-wrapper {}
+
+.details {}
+
+.details-title {}
+
+.details-list {}
+
+.get-started {}
+
+.get-started-title {}
+
+.footer {}
+
+.footer-list {}
+
+.footer-title {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    line-height: 1.4444;
+    letter-spacing: 0.18px;
+}
+
+.footer-item-list {}
+
+.footer-link {
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 1.7333;
+    letter-spacing: 0.16px;
+
+    color: var(--secondary-text-color)
+}
+
+.form-btn {}
+
+.foooter-text {
+    font-size: 1.4444;
+    line-height: 26px;
+
+    color: var(--secondary-text-color)
+}
+
+.icons-list {}
