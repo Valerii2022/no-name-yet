@@ -1,3 +1,5 @@
+/* general styles */
+
 :root {
     --primary-text-color: #1E212B;
     --secondary-text-color: #757575;
@@ -14,6 +16,7 @@ body {
     color: var(--primary-text-color);
     background-color: var(--bg-color);
 }
+
 
 .button {
     font-size: 18px;
@@ -64,7 +67,11 @@ body {
     list-style: none;
 }
 
+/* header */
+
 .header {}
+
+/* welcome section */
 
 .welcome {}
 
@@ -81,13 +88,30 @@ body {
 
 .descr {}
 
-.gallery {}
+/* gallery section */
+
+.gallery {
+    height: 608px;
+    background: url(../images/background-min.jpg) no-repeat;
+}
+
+.hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+/* what included section */
 
 .included {}
 
 .included-title {}
 
 .included-list {}
+
+/* portfolio section */
 
 .portfolio {}
 
@@ -97,15 +121,21 @@ body {
 
 .img-wrapper {}
 
+/* details section */
+
 .details {}
 
 .details-title {}
 
 .details-list {}
 
+/* let`s get started section */
+
 .get-started {}
 
 .get-started-title {}
+
+/* footer */
 
 .footer {}
 
