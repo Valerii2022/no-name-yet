@@ -37,8 +37,8 @@ figure {
 }
 
 .button {
-  transition: color var(--transition), border var(--transition), background-color var(--transition);
-  border: none;
+  transition: color var(--transition), background-color var(--transition);
+  border: 2px solid var(--button-bg-color);
 
   font-size: 18px;
   line-height: 1.4444;
@@ -50,7 +50,6 @@ figure {
 }
 
 .button:hover {
-  border: 2px solid var(--button-bg-color);
   color: var(--button-bg-color);
   background-color: var(--white-color);
 }
@@ -297,11 +296,11 @@ figure {
 }
 
 .get-started .btn {
-  transition: color var(--transition), border var(--transition), background-color var(--transition);
+  transition: color var(--transition), background-color var(--transition);
 
   margin-bottom: 102px;
   padding: 1px 24px;
-  border: none;
+  border: 2px solid var(--button-bg-color);
 
   font-size: 18px;
   line-height: 1.4444;
@@ -312,7 +311,10 @@ figure {
   background-color: var(--button-bg-color);
 }
 
-
+.get-started .btn:hover {
+  background-color: var(--white-color);
+  color: var(--button-bg-color);
+}
 
 .img-block {
   height: 443px;
