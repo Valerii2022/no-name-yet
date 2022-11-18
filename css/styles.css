@@ -37,6 +37,7 @@ figure {
 }
 
 .button {
+  transition: color var(--transition), border var(--transition), background-color var(--transition);
   border: none;
 
   font-size: 18px;
@@ -48,7 +49,11 @@ figure {
   background-color: var(--button-bg-color);
 }
 
-.button {}
+.button:hover {
+  border: 2px solid var(--button-bg-color);
+  color: var(--button-bg-color);
+  background-color: var(--white-color);
+}
 
 .uptitle {
   line-height: 1.1667;
@@ -292,6 +297,8 @@ figure {
 }
 
 .get-started .btn {
+  transition: color var(--transition), border var(--transition), background-color var(--transition);
+
   margin-bottom: 102px;
   padding: 1px 24px;
   border: none;
@@ -304,6 +311,8 @@ figure {
   color: var(--white-color);
   background-color: var(--button-bg-color);
 }
+
+
 
 .img-block {
   height: 443px;
