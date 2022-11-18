@@ -7,6 +7,7 @@
   --bg-color: #f3f4f5;
   --button-bg-color: #ffb5a7;
   --uptitle-color: #b7bccb;
+  --transition: 250ms cubic-bezier(0, .72, .98, .27);
 }
 
 body {
@@ -46,6 +47,8 @@ figure {
   color: var(--white-color);
   background-color: var(--button-bg-color);
 }
+
+.button {}
 
 .uptitle {
   line-height: 1.1667;
@@ -193,8 +196,7 @@ figure {
   width: 552px;
 }
 
-.included-icon {
-}
+.included-icon {}
 
 .included-list .subtitle {
   margin-bottom: 13px;
@@ -311,8 +313,7 @@ figure {
 
 /*-------------------------------------------------------- footer */
 
-.footer {
-}
+.footer {}
 
 .footer-top {
   display: flex;
@@ -361,8 +362,7 @@ figure {
   color: var(--secondary-text-color);
 }
 
-.footer .form-btn {
-}
+.footer .form-btn {}
 
 .footer-bottom {
   padding: 23px 30px 50px 30px;
