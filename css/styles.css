@@ -458,6 +458,8 @@ figure {
 /* ---------------------------------------------------backdrop */
 
 .backdrop {
+  transition: opacity var(--transition), visibility var(--transition);
+
   position: fixed;
   top: 0;
   width: 100%;
