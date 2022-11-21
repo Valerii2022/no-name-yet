@@ -1,459 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>No Name Yet</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans&family=DM+Serif+Display&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
 
-  <body>
-    <!-- header -->
-    <header class="header">
-      <div class="header-wrap">
-        <img src="./images/logo.svg" alt="" />
-        <form action="#">
-          <input class="input" type="text" placeholder="Name" tabindex="1" />
-          <button class="button" type="button">Client Login</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>No Name Yet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+  <!-- animation start-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- animation end -->
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header">
+    <div class="header-wrap">
+      <img src="./images/logo.svg" alt="" />
+      <form action="#">
+        <input class="input" type="text" placeholder="Name" tabindex="1" />
+        <button class="button" type="button" data-modal-open>Client Login</button>
+      </form>
+    </div>
+  </header>
+  <!-- main -->
+  <main>
+    <!-- welcome section -->
+    <section class="welcome section">
+      <div class="welcome-container">
+        <h1 class="welcome-title animate__animated animate__backInDown">Welcome to NoWeddingYet</h1>
+        <p class="descr">
+          NoWeddingYet is a perfect portfolio Webflow Template for wedding photographers, event
+          planners, floral designers or anyone who needs to create a photo-centric website to help
+          sell their services.
+        </p>
+        <button class="button" type="button">Preview Pages</button>
+      </div>
+    </section>
+    <!-- gallery section -->
+    <section class="gallery section">
+      <h2 class="hidden">Gallery</h2>
+    </section>
+    <!-- What`s included section -->
+    <section class="included section">
+      <div class="container">
+        <div class="included-top">
+          <h2 class="included-title title" data-aos="fade-left">What's included in NoWeddingYet</h2>
+          <p class="descr">
+            NoWeddingYet includes everything you need to build a perfect portfolio for wedding
+            photographers, event planners, floral designers or anyone who needs to create a
+            photo-centric website and sell their services.
+          </p>
+        </div>
+        <ul class="included-list list">
+          <li class="item">
+            <svg class="included-icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-included-1"></use>
+            </svg>
+            <h3 class="subtitle">Fully Responsive</h3>
+            <p class="descr">
+              NoWeddingYet is a fully responsive template that displays perfectly on all screen
+              sizes and mobile devices, expertly crafted for maximum reach.
+            </p>
+          </li>
+          <li class="item">
+            <svg class="included-icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-included-2"></use>
+            </svg>
+            <h3 class="subtitle">100% Customizable</h3>
+            <p class="descr">
+              Change the colours, container sizes, spacing or anything you like to suit your
+              project and to make the template look unique for your project.
+            </p>
+          </li>
+          <li class="item">
+            <svg class="included-icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-included-3"></use>
+            </svg>
+            <h3 class="subtitle">CMS Driven</h3>
+            <p class="descr">
+              Use the power of Webflow CMS to add and edit the gallery, blog posts, FAQ and
+              reviews. The whole structure is configured and ready to go
+            </p>
+          </li>
+          <li class="item">
+            <svg class="included-icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-included-4"></use>
+            </svg>
+            <h3 class="subtitle">Webflow Ecommerce</h3>
+            <p class="descr">
+              NoWeddingYet was built on Webflow using the Ecommerce feature, allowing you to
+              easily sell products or service packages on your website.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- portfolio section -->
+    <section class="portfolio section">
+      <div class="container">
+        <p class="uptitle">Page Previews</p>
+        <h2 class="portfolio-title title" data-aos="fade-left">Portfolio Pages</h2>
+        <p class="descr">Preview the NoWeddingYet pages by clicking their links below.</p>
+        <ul class="portfolio-list list">
+          <li class="item">
+            <figure class="img-wrapper">
+              <img class="img" src="./images/portfolio-1-min.jpg" alt="Page previews" width="357" height="280" />
+              <figcaption class="subtitle">Home v1</figcaption>
+            </figure>
+          </li>
+          <li class="item">
+            <figure class="img-wrapper">
+              <img class="img" src="./images/portfolio-2-min.jpg" alt="Page previews" width="357" height="280" />
+              <figcaption class="subtitle">Home v2</figcaption>
+            </figure>
+          </li>
+          <li class="item">
+            <figure class="img-wrapper">
+              <img class="img" src="./images/portfolio-3-min.jpg" alt="Page previews" width="357" height="280" />
+              <figcaption class="subtitle">Home v3</figcaption>
+            </figure>
+          </li>
+          <li class="item">
+            <figure class="img-wrapper">
+              <img class="img" src="./images/portfolio-4-min.jpg" alt="Page previews" width="357" height="280" />
+              <figcaption class="subtitle">Home v4</figcaption>
+            </figure>
+          </li>
+          <li class="item">
+            <figure class="img-wrapper">
+              <img class="img" src="./images/portfolio-5-min.jpg" alt="Page previews" width="357" height="280" />
+              <figcaption class="subtitle">Gallery v1</figcaption>
+            </figure>
+          </li>
+          <li class="item">
+            <figure class="img-wrapper">
+              <img class="img" src="./images/portfolio-6-min.jpg" alt="Page previews" width="357" height="280" />
+              <figcaption class="subtitle">Gallery v2</figcaption>
+            </figure>
+          </li>
+          <li class="item">
+            <figure class="img-wrapper">
+              <img class="img" src="./images/portfolio-7-min.jpg" alt="Page previews" width="357" height="280" />
+              <figcaption class="subtitle">Gallery v3</figcaption>
+            </figure>
+          </li>
+          <li class="item">
+            <figure class="img-wrapper">
+              <img class="img" src="./images/portfolio-8-min.jpg" alt="Page previews" width="357" height="280" />
+              <figcaption class="subtitle">Gallery v4</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- details section -->
+    <section class="details section">
+      <div class="container">
+        <p class="uptitle">Page Previews</p>
+        <h2 class="details-title title" data-aos="fade-left">Details Pages</h2>
+        <p class="descr">Preview the NoWeddingYet pages by clicking their links below.</p>
+        <ul class="details-list list">
+          <li class="item">
+            <figure class="img-wrapper">
+              <img class="img" src="./images/details-1-min.jpg" alt="Details" width="357" height="280" />
+              <figcaption class="subtitle">Pricing v1</figcaption>
+            </figure>
+          </li>
+          <li class="item">
+            <figure class="img-wrapper">
+              <img class="img" src="./images/details-2-min.jpg" alt="Details" width="357" height="280" />
+              <figcaption class="subtitle">Pricing v2</figcaption>
+            </figure>
+          </li>
+          <li class="item">
+            <figure class="img-wrapper">
+              <img class="img" src="./images/details-3-min.jpg" alt="Details" width="357" height="280" />
+              <figcaption class="subtitle">Reviews v1</figcaption>
+            </figure>
+          </li>
+          <li class="item">
+            <figure class="img-wrapper">
+              <img class="img" src="./images/details-4-min.jpg" alt="Details" width="357" height="280" />
+              <figcaption class="subtitle">Reviews v2</figcaption>
+            </figure>
+          </li>
+          <li class="item">
+            <figure class="img-wrapper">
+              <img class="img" src="./images/details-5-min.jpg" alt="Details" width="357" height="280" />
+              <figcaption class="subtitle">FAQ v1</figcaption>
+            </figure>
+          </li>
+          <li class="item">
+            <figure class="img-wrapper">
+              <img class="img" src="./images/details-6-min.jpg" alt="Details" width="357" height="280" />
+              <figcaption class="subtitle">FAQ v2</figcaption>
+            </figure>
+          </li>
+          <li class="item">
+            <figure class="img-wrapper">
+              <img class="img" src="./images/details-7-min.jpg" alt="Details" width="357" height="280" />
+              <figcaption class="subtitle">Blog v1</figcaption>
+            </figure>
+          </li>
+          <li class="item">
+            <figure class="img-wrapper">
+              <img class="img" src="./images/details-8-min.jpg" alt="Details" width="357" height="280" />
+              <figcaption class="subtitle">Blog v2</figcaption>
+            </figure>
+          </li>
+          <li class="item">
+            <figure class="img-wrapper">
+              <img class="img" src="./images/details-9-min.jpg" alt="Details" width="357" height="280" />
+              <figcaption class="subtitle">Blog Post (CMS)</figcaption>
+            </figure>
+          </li>
+          <li class="item">
+            <figure class="img-wrapper">
+              <img class="img" src="./images/details-10-min.jpg" alt="Details" width="357" height="280" />
+              <figcaption class="subtitle">Client Gallery</figcaption>
+            </figure>
+          </li>
+          <li class="item">
+            <figure class="img-wrapper">
+              <img class="img" src="./images/details-11-min.jpg" alt="Details" width="357" height="280" />
+              <figcaption class="subtitle">Contact v1</figcaption>
+            </figure>
+          </li>
+          <li class="item">
+            <figure class="img-wrapper">
+              <img class="img" src="./images/details-12-min.jpg" alt="Details" width="357" height="280" />
+              <figcaption class="subtitle">Contact v2</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- let`s get started section -->
+    <section class="get-started section">
+      <p class="uptitle">Let's Get Started</p>
+      <h2 class="get-started-title title" data-aos="fade-left">Create Your Amazing Website with NoWeddingYet</h2>
+      <button class="btn" type="button">Get Started</button>
+      <div class="img-block"></div>
+    </section>
+  </main>
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <ul class="footer-list list">
+          <li class="item">
+            <h2 class="footer-title">Portfolio</h2>
+            <ul class="footer-item-list list">
+              <li class="item-text"><a href="#" class="footer-link">Home v1</a></li>
+              <li class="item-text"><a href="#" class="footer-link">Home v2</a></li>
+              <li class="item-text"><a href="#" class="footer-link">Home v3</a></li>
+              <li class="item-text"><a href="#" class="footer-link">Gallery v1</a></li>
+              <li class="item-text"><a href="#" class="footer-link">Gallery v2</a></li>
+              <li class="item-text"><a href="#" class="footer-link">Gallery v3</a></li>
+              <li class="item-text"><a href="#" class="footer-link">Client Gallery</a></li>
+            </ul>
+          </li>
+          <li class="item">
+            <h2 class="footer-title">Details</h2>
+            <ul class="footer-item-list list">
+              <li class="item-text"><a href="#" class="footer-link">Pricing</a></li>
+              <li class="item-text"><a href="#" class="footer-link">Reviews</a></li>
+              <li class="item-text"><a href="#" class="footer-link">FAQ</a></li>
+              <li class="item-text"><a href="#" class="footer-link">Blog</a></li>
+              <li class="item-text"><a href="#" class="footer-link">Contact v1</a></li>
+              <li class="item-text"><a href="#" class="footer-link">Contact v2</a></li>
+              <li class="item-text"><a href="#" class="footer-link">Contact v3</a></li>
+            </ul>
+          </li>
+          <li class="item">
+            <h2 class="footer-title">Template</h2>
+            <ul class="footer-item-list list">
+              <li class="item-text"><a href="#" class="footer-link">Style Guide</a></li>
+              <li class="item-text"><a href="#" class="footer-link">Changelog</a></li>
+              <li class="item-text"><a href="#" class="footer-link">Licenses</a></li>
+              <li class="item-text"><a href="#" class="footer-link">Option 2</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="form" action="#">
+          <h2 class="footer-title">Newsletter</h2>
+          <input type="text" name="username" placeholder="Name" tabindex="2" />
+          <input type="tel" name="userphone" placeholder="Phone" tabindex="3" />
+          <input type="email" name="usermail" placeholder="Email" tabindex="4" />
+          <button type="submit" class="form-btn" tabindex="5">Send</button>
         </form>
       </div>
-    </header>
-    <!-- main -->
-    <main>
-      <!-- welcome section -->
-      <section class="welcome section">
-        <div class="welcome-container">
-          <h1 class="welcome-title">Welcome to NoWeddingYet</h1>
-          <p class="descr">
-            NoWeddingYet is a perfect portfolio Webflow Template for wedding photographers, event
-            planners, floral designers or anyone who needs to create a photo-centric website to help
-            sell their services.
-          </p>
-          <button class="button" type="button">Preview Pages</button>
-        </div>
-      </section>
-      <!-- gallery section -->
-      <section class="gallery section">
-        <h2 class="hidden">Gallery</h2>
-      </section>
-      <!-- What`s included section -->
-      <section class="included section">
-        <div class="container">
-          <div class="included-top">
-            <h2 class="included-title title">What's included in NoWeddingYet</h2>
-            <p class="descr">
-              NoWeddingYet includes everything you need to build a perfect portfolio for wedding
-              photographers, event planners, floral designers or anyone who needs to create a
-              photo-centric website and sell their services.
-            </p>
-          </div>
-          <ul class="included-list list">
-            <li class="item">
-              <svg class="included-icon" width="40" height="40">
-                <use href="./images/icons.svg#icon-included-1"></use>
+      <div class="footer-bottom">
+        <p class="foooter-text">Designed by NoNameYet | Powered by Webflow</p>
+        <ul class="icons-list list">
+          <li class="icon">
+            <a href="#" class="social-link">
+              <svg class="social-icon" width="12" height="26">
+                <use href="./images/icons.svg#icon-facebook"></use>
               </svg>
-              <h3 class="subtitle">Fully Responsive</h3>
-              <p class="descr">
-                NoWeddingYet is a fully responsive template that displays perfectly on all screen
-                sizes and mobile devices, expertly crafted for maximum reach.
-              </p>
-            </li>
-            <li class="item">
-              <svg class="included-icon" width="40" height="40">
-                <use href="./images/icons.svg#icon-included-2"></use>
+            </a>
+          </li>
+          <li class="icon">
+            <a href="#" class="social-link">
+              <svg class="social-icon" width="23" height="19">
+                <use href="./images/icons.svg#icon-twitter"></use>
               </svg>
-              <h3 class="subtitle">100% Customizable</h3>
-              <p class="descr">
-                Change the colours, container sizes, spacing or anything you like to suit your
-                project and to make the template look unique for your project.
-              </p>
-            </li>
-            <li class="item">
-              <svg class="included-icon" width="40" height="40">
-                <use href="./images/icons.svg#icon-included-3"></use>
+            </a>
+          </li>
+          <li class="icon">
+            <a href="#" class="social-link">
+              <svg class="social-icon" width="26" height="26">
+                <use href="./images/icons.svg#icon-instagram"></use>
               </svg>
-              <h3 class="subtitle">CMS Driven</h3>
-              <p class="descr">
-                Use the power of Webflow CMS to add and edit the gallery, blog posts, FAQ and
-                reviews. The whole structure is configured and ready to go
-              </p>
-            </li>
-            <li class="item">
-              <svg class="included-icon" width="40" height="40">
-                <use href="./images/icons.svg#icon-included-4"></use>
+            </a>
+          </li>
+          <li class="icon">
+            <a href="#" class="social-link">
+              <svg class="social-icon" width="26" height="18">
+                <use href="./images/icons.svg#icon-youtube"></use>
               </svg>
-              <h3 class="subtitle">Webflow Ecommerce</h3>
-              <p class="descr">
-                NoWeddingYet was built on Webflow using the Ecommerce feature, allowing you to
-                easily sell products or service packages on your website.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!-- portfolio section -->
-      <section class="portfolio section">
-        <div class="container">
-          <p class="uptitle">Page Previews</p>
-          <h2 class="portfolio-title title">Portfolio Pages</h2>
-          <p class="descr">Preview the NoWeddingYet pages by clicking their links below.</p>
-          <ul class="portfolio-list list">
-            <li class="item">
-              <figure class="img-wrapper">
-                <img
-                  class="img"
-                  src="./images/portfolio-1-min.jpg"
-                  alt="Page previews"
-                  width="357"
-                  height="280"
-                />
-                <figcaption class="subtitle">Home v1</figcaption>
-              </figure>
-            </li>
-            <li class="item">
-              <figure class="img-wrapper">
-                <img
-                  class="img"
-                  src="./images/portfolio-2-min.jpg"
-                  alt="Page previews"
-                  width="357"
-                  height="280"
-                />
-                <figcaption class="subtitle">Home v2</figcaption>
-              </figure>
-            </li>
-            <li class="item">
-              <figure class="img-wrapper">
-                <img
-                  class="img"
-                  src="./images/portfolio-3-min.jpg"
-                  alt="Page previews"
-                  width="357"
-                  height="280"
-                />
-                <figcaption class="subtitle">Home v3</figcaption>
-              </figure>
-            </li>
-            <li class="item">
-              <figure class="img-wrapper">
-                <img
-                  class="img"
-                  src="./images/portfolio-4-min.jpg"
-                  alt="Page previews"
-                  width="357"
-                  height="280"
-                />
-                <figcaption class="subtitle">Home v4</figcaption>
-              </figure>
-            </li>
-            <li class="item">
-              <figure class="img-wrapper">
-                <img
-                  class="img"
-                  src="./images/portfolio-5-min.jpg"
-                  alt="Page previews"
-                  width="357"
-                  height="280"
-                />
-                <figcaption class="subtitle">Gallery v1</figcaption>
-              </figure>
-            </li>
-            <li class="item">
-              <figure class="img-wrapper">
-                <img
-                  class="img"
-                  src="./images/portfolio-6-min.jpg"
-                  alt="Page previews"
-                  width="357"
-                  height="280"
-                />
-                <figcaption class="subtitle">Gallery v2</figcaption>
-              </figure>
-            </li>
-            <li class="item">
-              <figure class="img-wrapper">
-                <img
-                  class="img"
-                  src="./images/portfolio-7-min.jpg"
-                  alt="Page previews"
-                  width="357"
-                  height="280"
-                />
-                <figcaption class="subtitle">Gallery v3</figcaption>
-              </figure>
-            </li>
-            <li class="item">
-              <figure class="img-wrapper">
-                <img
-                  class="img"
-                  src="./images/portfolio-8-min.jpg"
-                  alt="Page previews"
-                  width="357"
-                  height="280"
-                />
-                <figcaption class="subtitle">Gallery v4</figcaption>
-              </figure>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!-- details section -->
-      <section class="details section">
-        <div class="container">
-          <p class="uptitle">Page Previews</p>
-          <h2 class="details-title title">Details Pages</h2>
-          <p class="descr">Preview the NoWeddingYet pages by clicking their links below.</p>
-          <ul class="details-list list">
-            <li class="item">
-              <figure class="img-wrapper">
-                <img
-                  class="img"
-                  src="./images/details-1-min.jpg"
-                  alt="Details"
-                  width="357"
-                  height="280"
-                />
-                <figcaption class="subtitle">Pricing v1</figcaption>
-              </figure>
-            </li>
-            <li class="item">
-              <figure class="img-wrapper">
-                <img
-                  class="img"
-                  src="./images/details-2-min.jpg"
-                  alt="Details"
-                  width="357"
-                  height="280"
-                />
-                <figcaption class="subtitle">Pricing v2</figcaption>
-              </figure>
-            </li>
-            <li class="item">
-              <figure class="img-wrapper">
-                <img
-                  class="img"
-                  src="./images/details-3-min.jpg"
-                  alt="Details"
-                  width="357"
-                  height="280"
-                />
-                <figcaption class="subtitle">Reviews v1</figcaption>
-              </figure>
-            </li>
-            <li class="item">
-              <figure class="img-wrapper">
-                <img
-                  class="img"
-                  src="./images/details-4-min.jpg"
-                  alt="Details"
-                  width="357"
-                  height="280"
-                />
-                <figcaption class="subtitle">Reviews v2</figcaption>
-              </figure>
-            </li>
-            <li class="item">
-              <figure class="img-wrapper">
-                <img
-                  class="img"
-                  src="./images/details-5-min.jpg"
-                  alt="Details"
-                  width="357"
-                  height="280"
-                />
-                <figcaption class="subtitle">FAQ v1</figcaption>
-              </figure>
-            </li>
-            <li class="item">
-              <figure class="img-wrapper">
-                <img
-                  class="img"
-                  src="./images/details-6-min.jpg"
-                  alt="Details"
-                  width="357"
-                  height="280"
-                />
-                <figcaption class="subtitle">FAQ v2</figcaption>
-              </figure>
-            </li>
-            <li class="item">
-              <figure class="img-wrapper">
-                <img
-                  class="img"
-                  src="./images/details-7-min.jpg"
-                  alt="Details"
-                  width="357"
-                  height="280"
-                />
-                <figcaption class="subtitle">Blog v1</figcaption>
-              </figure>
-            </li>
-            <li class="item">
-              <figure class="img-wrapper">
-                <img
-                  class="img"
-                  src="./images/details-8-min.jpg"
-                  alt="Details"
-                  width="357"
-                  height="280"
-                />
-                <figcaption class="subtitle">Blog v2</figcaption>
-              </figure>
-            </li>
-            <li class="item">
-              <figure class="img-wrapper">
-                <img
-                  class="img"
-                  src="./images/details-9-min.jpg"
-                  alt="Details"
-                  width="357"
-                  height="280"
-                />
-                <figcaption class="subtitle">Blog Post (CMS)</figcaption>
-              </figure>
-            </li>
-            <li class="item">
-              <figure class="img-wrapper">
-                <img
-                  class="img"
-                  src="./images/details-10-min.jpg"
-                  alt="Details"
-                  width="357"
-                  height="280"
-                />
-                <figcaption class="subtitle">Client Gallery</figcaption>
-              </figure>
-            </li>
-            <li class="item">
-              <figure class="img-wrapper">
-                <img
-                  class="img"
-                  src="./images/details-11-min.jpg"
-                  alt="Details"
-                  width="357"
-                  height="280"
-                />
-                <figcaption class="subtitle">Contact v1</figcaption>
-              </figure>
-            </li>
-            <li class="item">
-              <figure class="img-wrapper">
-                <img
-                  class="img"
-                  src="./images/details-12-min.jpg"
-                  alt="Details"
-                  width="357"
-                  height="280"
-                />
-                <figcaption class="subtitle">Contact v2</figcaption>
-              </figure>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!-- let`s get started section -->
-      <section class="get-started section">
-        <p class="uptitle">Let's Get Started</p>
-        <h2 class="get-started-title title">Create Your Amazing Website with NoWeddingYet</h2>
-        <button class="btn" type="button">Get Started</button>
-        <div class="img-block"></div>
-      </section>
-    </main>
-    <!-- footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-top">
-          <ul class="footer-list list">
-            <li class="item">
-              <h2 class="footer-title">Portfolio</h2>
-              <ul class="footer-item-list list">
-                <li class="item-text"><a href="#" class="footer-link">Home v1</a></li>
-                <li class="item-text"><a href="#" class="footer-link">Home v2</a></li>
-                <li class="item-text"><a href="#" class="footer-link">Home v3</a></li>
-                <li class="item-text"><a href="#" class="footer-link">Gallery v1</a></li>
-                <li class="item-text"><a href="#" class="footer-link">Gallery v2</a></li>
-                <li class="item-text"><a href="#" class="footer-link">Gallery v3</a></li>
-                <li class="item-text"><a href="#" class="footer-link">Client Gallery</a></li>
-              </ul>
-            </li>
-            <li class="item">
-              <h2 class="footer-title">Details</h2>
-              <ul class="footer-item-list list">
-                <li class="item-text"><a href="#" class="footer-link">Pricing</a></li>
-                <li class="item-text"><a href="#" class="footer-link">Reviews</a></li>
-                <li class="item-text"><a href="#" class="footer-link">FAQ</a></li>
-                <li class="item-text"><a href="#" class="footer-link">Blog</a></li>
-                <li class="item-text"><a href="#" class="footer-link">Contact v1</a></li>
-                <li class="item-text"><a href="#" class="footer-link">Contact v2</a></li>
-                <li class="item-text"><a href="#" class="footer-link">Contact v3</a></li>
-              </ul>
-            </li>
-            <li class="item">
-              <h2 class="footer-title">Template</h2>
-              <ul class="footer-item-list list">
-                <li class="item-text"><a href="#" class="footer-link">Style Guide</a></li>
-                <li class="item-text"><a href="#" class="footer-link">Changelog</a></li>
-                <li class="item-text"><a href="#" class="footer-link">Licenses</a></li>
-                <li class="item-text"><a href="#" class="footer-link">Option 2</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="form" action="#">
-            <h2 class="footer-title">Newsletter</h2>
-            <input type="text" name="username" placeholder="Name" tabindex="2" />
-            <input type="tel" name="userphone" placeholder="Phone" tabindex="3" />
-            <input type="email" name="usermail" placeholder="Email" tabindex="4" />
-            <button type="submit" class="form-btn" tabindex="5">Send</button>
-          </form>
-        </div>
-        <div class="footer-bottom">
-          <p class="foooter-text">Designed by NoNameYet | Powered by Webflow</p>
-          <ul class="icons-list list">
-            <li class="icon">
-              <a href="#" class="social-link">
-                <svg class="social-icon" width="12" height="26">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="icon">
-              <a href="#" class="social-link">
-                <svg class="social-icon" width="23" height="19">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="icon">
-              <a href="#" class="social-link">
-                <svg class="social-icon" width="26" height="26">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="icon">
-              <a href="#" class="social-link">
-                <svg class="social-icon" width="26" height="18">
-                  <use href="./images/icons.svg#icon-youtube"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+            </a>
+          </li>
+        </ul>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+  <!-- backdrop -->
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <buttom class="modal-btn" type="button" data-modal-close>
+        <svg class="modal-close" width="26" height="18">
+          <use href="./images/icons.svg#icon-youtube"></use>
+        </svg>
+      </buttom>
+    </div>
+  </div>
+  <!-- animation script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- modal script -->
+  <script src="./js/modal.js"></script>
+</body>
+
 </html>
