@@ -110,9 +110,64 @@ figure {
   margin: 0 auto;
 }
 
+.header-form {
+  display: flex;
+  gap: 15px;
+}
+
+.header .input-wrap {
+  position: relative;
+  padding: 10px 0;
+}
+
+.header .input {
+  transition: border 250ms linear;
+
+  padding: 5px;
+  outline: none;
+  width: 300px;
+  height: 100%;
+  border: 1px solid var(--secondary-text-color);
+
+  font-size: 18px;
+  line-height: 1.44;
+  color: var(--secondary-text-color);
+}
+
+.header .input:focus,
+.header .input:hover {
+  border: 1px solid var(--button-bg-color);
+}
+
+.header .input:not(:focus):not(:placeholder-shown):valid {
+  background-color: rgba(0, 255, 0, 0.50);
+}
+
+.header .input:not(:focus):not(:placeholder-shown):invalid {
+  background-color: rgba(255, 0, 0, 0.50);
+}
+
+.header .label {
+  transition: transform 250ms linear;
+
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  font-size: 18px;
+  line-height: 1.44;
+  color: var(--secondary-text-color);
+}
+
+.header .input:focus+.label,
+.header .input:hover+.label,
+.header .input:not(:placeholder-shown)+.label {
+  transform: translate(-80px, -50%);
+}
+
 .header .button {
   padding: 15px 24px;
-  margin-left: 16px;
 }
 
 /*-------------------------------------------------------- welcome section */
@@ -348,8 +403,7 @@ figure {
 
 /*-------------------------------------------------------- footer */
 
-.footer {
-}
+.footer {}
 
 .footer-top {
   display: flex;
@@ -404,9 +458,6 @@ figure {
   color: var(--button-bg-color);
 }
 
-.footer .form-btn {
-}
-
 .footer-bottom {
   padding: 23px 30px 50px 30px;
   display: flex;
@@ -453,6 +504,49 @@ figure {
 
 .footer .social-icon {
   fill: currentColor;
+}
+
+.footer-form {}
+
+.footer-input {
+  transition: border 250ms linear;
+
+  width: 100%;
+  height: 57px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  padding-left: 15px;
+  outline: none;
+
+  font-size: 18px;
+  line-height: 1.44;
+  color: var(--secondary-text-color);
+}
+
+.footer-input:focus,
+.footer-input:hover {
+  border: 2px solid var(--button-bg-color);
+}
+
+.footer-form-btn {
+  transition: background-color 250ms linear;
+  width: 100%;
+  height: 57px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--secondary-text-color);
+
+  font-size: 18px;
+  line-height: 1.44;
+  text-align: center;
+  letter-spacing: 0.18px;
+
+  color: var(--white-color);
+}
+
+.footer-form-btn:hover {
+  background-color: var(--button-bg-color);
 }
 
 /* ---------------------------------------------------backdrop */
