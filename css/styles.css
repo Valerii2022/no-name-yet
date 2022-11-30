@@ -568,15 +568,19 @@ figure {
 }
 
 .modal {
+  display: flex;
+  flex-direction: column;
+
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 1000px;
-  min-height: 500px;
-  background-color: var(--white-color);
+  width: 700px;
+  min-height: 800px;
+  background-color: var(--secondary-text-color);
   border-radius: 5px;
   box-shadow: 0 0 50px 30px var(--button-bg-color);
+  padding: 35px;
 }
 
 .modal-btn {
@@ -609,4 +613,91 @@ figure {
   fill: currentColor;
 }
 
-/* ---------------------------------animation */
+/* ---------------------------------modal-form */
+
+.modal-title {
+  padding: 30px 0;
+  font-size: 47px;
+  line-height: 1.17;
+  text-align: center;
+
+  color: var(--button-bg-color);
+}
+
+.modal-form {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form__top {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-grow: 1;
+}
+
+.modal-form__label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.modal-form__text {}
+
+.modal-form__input {
+  width: 450px;
+  height: 50px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding-left: 20px;
+}
+
+.modal-form__wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.modal-form__input--small {
+  width: 220px;
+}
+
+.modal-form__label--bigger {
+  flex-grow: 1;
+}
+
+.modal-form__textarea {
+  width: 450px;
+  height: 200px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 20px;
+  resize: none;
+}
+
+.modal-form__file {}
+
+.modal-form__btn {
+  transition: color var(--transition), background-color var(--transition);
+
+  width: 150px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  margin: 0 auto;
+  cursor: pointer;
+
+  background-color: var(--button-bg-color);
+  color: var(--white-color);
+}
+
+.modal-form__btn:hover,
+.modal-form__btn:focus {
+  color: var(--button-bg-color);
+  background-color: var(--white-color);
+}

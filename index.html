@@ -356,6 +356,44 @@
           <use href="./images/icons.svg#icon-modal-close"></use>
         </svg>
       </buttom>
+      <p class="modal-title">Зворотній зв'язок</p>
+      <form class="modal-form">
+        <div class="modal-form__top">
+          <label class="modal-form__label">
+            <span class="modal-form__text">Ваша організація</span>
+            <input class="modal-form__input" type="text" name="user-company" placeholder="ТОВ Ваша організація"
+              autofocus>
+          </label>
+          <label class="modal-form__label">
+            <span class="modal-form__text">П.І.Б.</span>
+            <input class="modal-form__input" type="text" name="user-name" placeholder="Сидоренко Микола Миколайович">
+          </label>
+          <div class="modal-form__wrap">
+            <label class="modal-form__label modal-form__label--bigger">
+              <span class="modal-form__text">Телефон</span>
+              <input class="modal-form__input modal-form__input--small" type="number" name="user-code"
+                placeholder="Код міста - 3 цифри" min="0" max="999" step="1">
+            </label>
+            <label class="modal-form__label">
+              <input class="modal-form__input modal-form__input--small" type="tel" name="user-tel"
+                placeholder="Номер телефону">
+            </label>
+          </div>
+          <label class="modal-form__label">
+            <span class="modal-form__text">Ваша пошта</span>
+            <input class="modal-form__input" type="email" name="user-email" placeholder="you_name@domain.com">
+          </label>
+          <label class="modal-form__label">
+            <span class="modal-form__text">Повідомлення</span>
+            <textarea class="modal-form__textarea" name="feedback" placeholder="Введіть текст повідомлення"></textarea>
+          </label>
+          <div class="modal-form__label">
+            <label for="file"><span class="modal-form__text">Прикріпити файл</span></label>
+            <input class="modal-form__file" type="file" name="user-files" id="file">
+          </div>
+        </div>
+        <button class="modal-form__btn" type="submit">Відправити</button>
+      </form>
     </div>
   </div>
   <!-- animation script -->
