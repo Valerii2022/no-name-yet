@@ -387,10 +387,13 @@
             <span class="modal-form__text">Повідомлення</span>
             <textarea class="modal-form__textarea" name="feedback" placeholder="Введіть текст повідомлення"></textarea>
           </label>
-          <div class="modal-form__label">
-            <input class="modal-form__file " type="file" name="user-files" id="file">
-            <label for="file"><span class="modal-form__text">Прикріпити файл</span></label>
-          </div>
+          <label class="modal-form__label file-label">
+            <span class="modal-form__text">Прикріпити файл</span>
+            <input class="modal-form__file hidden" type="file" name="user-files" id="file">
+            <span class="modal-form__file-field"></span>
+            <span class="modal-form__file-hide-text">Файл завантажено</span>
+            <span class="modal-form__file-btn">Огляд</span>
+          </label>
         </div>
         <button class="modal-form__btn" type="submit">Відправити</button>
       </form>
