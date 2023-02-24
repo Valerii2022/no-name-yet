@@ -567,6 +567,12 @@ figure {
   pointer-events: none;
 }
 
+.backdrop .form-wrap{
+  outline: 1px solid tomato;
+  display: flex;
+  flex-direction: column;
+}
+
 .modal {
   display: flex;
   flex-direction: column;
@@ -583,14 +589,16 @@ figure {
   padding: 35px;
 }
 
+
+
 .modal-btn {
   transition: color var(--transition), border var(--transition), background-color var(--transition);
 
   width: 40px;
   height: 40px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
+  /* position: absolute; */
+  /* top: 0;
+  right: 0; */
   display: flex;
   justify-content: center;
   align-items: center;
